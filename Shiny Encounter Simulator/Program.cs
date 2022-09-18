@@ -78,15 +78,15 @@ namespace Shiny_Encounter_Simulator
                 Console.WriteLine("\nShinies found: " + foundshiny);
                 Console.WriteLine("Secret shinies found: " + foundsecret);
                 Console.WriteLine("Encounter average per shiny: " + shinyaverage);
-                Console.WriteLine("Simulated play time: " + encountertimerhours + " hours (10 seconds per encounter)");
-                Console.WriteLine("Hours per shiny: " + houraverage);
+                Console.WriteLine("Simulated play time: " + Math.Round(encountertimerhours, 2) + " hours (10 seconds per encounter)");
+                Console.WriteLine("Hours per shiny: " + Math.Round(houraverage, 2));
 
                 Console.WriteLine("\nPress enter to run again.\n");
 
                 Console.ReadLine();
 
                 makeRandom(oddsceiling);
-
+              
             }
 
         }
